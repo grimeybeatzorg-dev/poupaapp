@@ -1,0 +1,19 @@
+{
+  "name": "Poupá - Android + Web",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  "features": {
+    "ghcr.io/devcontainers/features/android-sdk:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "fwcd.kotlin",
+        "ritwickdey.LiveServer"
+      ]
+    }
+  },
+  "forwardPorts": [5500, 8080],
+  "postCreateCommand": "chmod +x ./gradlew || true",
+  "remoteUser": "vscode"
+}
